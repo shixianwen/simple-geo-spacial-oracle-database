@@ -1,0 +1,61 @@
+INSERT INTO user_sdo_geom_metadata
+    (TABLE_NAME,
+     COLUMN_NAME,
+     DIMINFO,
+     SRID)
+  VALUES (
+  'AMBULANCEAREA',
+  'AMBULANCEAREASHAPE',
+  SDO_DIM_ARRAY(   -- 20X20 grid
+    SDO_DIM_ELEMENT('X', 0, 550, 0.005),
+    SDO_DIM_ELEMENT('Y', 0, 550, 0.005)
+     ),
+  NULL   -- SRID
+);
+
+INSERT INTO user_sdo_geom_metadata
+    (TABLE_NAME,
+     COLUMN_NAME,
+     DIMINFO,
+     SRID)
+  VALUES (
+  'LION',
+  'LIONSHAP',
+  SDO_DIM_ARRAY(   -- 20X20 grid
+    SDO_DIM_ELEMENT('X', 0, 550, 0.005),
+    SDO_DIM_ELEMENT('Y', 0, 550, 0.005)
+     ),
+  NULL   -- SRID
+);
+
+INSERT INTO user_sdo_geom_metadata
+    (TABLE_NAME,
+     COLUMN_NAME,
+     DIMINFO,
+     SRID)
+  VALUES (
+  'POND',
+  'PONDSHAPE',
+  SDO_DIM_ARRAY(   -- 20X20 grid
+    SDO_DIM_ELEMENT('X', 0, 550, 0.005),
+    SDO_DIM_ELEMENT('Y', 0, 550, 0.005)
+     ),
+  NULL   -- SRID
+);
+
+INSERT INTO user_sdo_geom_metadata
+    (TABLE_NAME,
+     COLUMN_NAME,
+     DIMINFO,
+     SRID)
+  VALUES (
+  'REGION',
+  'SHAPE',
+  SDO_DIM_ARRAY(   -- 20X20 grid
+    SDO_DIM_ELEMENT('X', 0, 550, 0.005),
+    SDO_DIM_ELEMENT('Y', 0, 550, 0.005)
+     ),
+  NULL   -- SRID
+);
+
+
